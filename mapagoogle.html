@@ -7,20 +7,19 @@
     <!-- Bootstrap CSS -->
     <link href="boostrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="boostrap/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <style>
         body {
             font-family: Arial, sans-serif;
         }
         .sidebar {
             height: 100vh;
-            background-color: #f8f9fa;
+            background-color: red;
         }
         .sidebar a {
             color: #333;
         }
-        .sidebar a.active {
-            background-color: #e9ecef;
-        }
+     
     </style>
 </head>
 <body>
@@ -29,7 +28,10 @@
             <!-- Barra lateral -->
             <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block sidebar">
                 <div class="position-sticky">
-                    <h4 class="text-center my-3">Dashboard</h4>
+
+                    <div class="imagen-container">
+                        <img src="img/alert.png" alt="" class="imagen">
+                    </div>
                     <ul class="nav flex-column">
                         <li class="nav-item">
                             <a class="nav-link active" href="index.html">Inicio</a>
