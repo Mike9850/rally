@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: gray;
+    margin: 0;
+    color: white;
+    
+}
+.imagen {
+  background-color: whitesmoke;
+    border-radius: 10px; /* Agrega bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra sutil */
+    
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto); /* Dos columnas de ancho automático */
+    gap: 50px; /* Espacio entre imágenes */
+}
+a {
+    text-decoration: none;
+    text-align: center;
+ 
+}
+
