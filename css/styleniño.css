@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1abc9c;
+    margin: 0;
+    color: white;
+
+    
+}
+.imagen {
+  background-color: whitesmoke;
+    border-radius: 20px; /* Agrega bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra sutil */
+    
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto); /* Dos columnas de ancho automático */
+    gap: 10px; /* Espacio entre imágenes */
+    
+       
+}
+a {
+    text-decoration: none;
+    text-align: center;
+   
+}
+.caption {
+    font-size: 25px; /* Tamaño de la fuente del texto */
+    color: white; /* Color del texto */
+    margin-top: 8px; /* Espacio entre la imagen y el texto */
+  
+ 
+
+}
+
+

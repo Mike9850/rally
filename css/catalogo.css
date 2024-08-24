@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #1abc9c;
+    color: white;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Dos columnas: una automática para la imagen y una que ocupa el resto del espacio */
+    gap: 20px; /* Espacio entre la imagen y el texto */
+    align-items: center; /* Alinea verticalmente en el centro */
+}
+
+.image {
+    width: 150px; /* Ajusta el tamaño según tus necesidades */
+    height: auto;
+    border-radius: 10px; /* Agrega bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Agrega una sombra sutil */
+}
+
+.text {
+    font-size: 20px; /* Tamaño de fuente del texto */
+    line-height: 1.5; /* Altura de línea para mejor legibilidad */
+    color: white;
+}
