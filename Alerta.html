@@ -86,53 +86,150 @@
             <main class="col-md-9 ms-sm-auto col-lg-10 px-4 fondo">
                 <h1 class="my-4 sidebara" >Menu de alertas</h1>
 
-                <div class="row">
-                    <!-- Tarjeta 1 -->
-                    <div class="col-md-4">
-                        <div class="card mb-4">
-                            <div class="card-body">
-                                <h5 class="card-title">Usuarios Activos</h5>
-                                <p class="card-text">Número de usuarios activos en el sistema.</p>
-                                <h3 class="card-text">1,234</h3>
+                <!DOCTYPE html>
+                <html lang="es">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Alertas de Emergencia</title>
+                    <style>
+                        body {
+                            font-family: Arial, sans-serif;
+                            line-height: 1.6;
+                            margin: 0;
+                            padding: 0;
+                            background-color: #f4f4f4;
+                        }
+                        header {
+                            background-color: #FF0000;
+                            color: white;
+                            padding: 10px 0;
+                            text-align: center;
+                        }
+                        header h1 {
+                            margin: 0;
+                            font-size: 2.5rem;
+                        }
+                        nav {
+                            background-color: #cc0000;
+                            padding: 10px;
+                            text-align: center;
+                        }
+                        nav a {
+                            color: white;
+                            margin: 0 15px;
+                            text-decoration: none;
+                        }
+                        .container {
+                            padding: 20px;
+                        }
+                        .alert {
+                            background-color: #FFD700;
+                            padding: 15px;
+                            margin-bottom: 20px;
+                            border-radius: 5px;
+                            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                            display: flex;
+                            align-items: center;
+                        }
+                        .alert img {
+                            max-width: 100px;
+                            margin-right: 20px;
+                        }
+                        .alert h2 {
+                            margin-top: 0;
+                        }
+                        .alert p {
+                            margin: 0;
+                        }
+                        .recent-alerts {
+                            margin-bottom: 20px;
+                        }
+                        .recent-alerts h3 {
+                            margin-bottom: 10px;
+                        }
+                        .recent-alerts ul {
+                            list-style-type: none;
+                            padding: 0;
+                        }
+                        .recent-alerts li {
+                            background-color: white;
+                            padding: 10px;
+                            margin-bottom: 10px;
+                            border-radius: 5px;
+                            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                        }
+                        footer {
+                            background-color: #333;
+                            color: white;
+                            text-align: center;
+                            padding: 10px 0;
+                            position: relative;
+                            bottom: 0;
+                            width: 100%;
+                        }
+                        footer p {
+                            margin: 0;
+                        }
+                        #backToTop {
+                            position: fixed;
+                            bottom: 20px;
+                            right: 20px;
+                            padding: 10px 20px;
+                            background-color: #007BFF;
+                            color: white;
+                            border: none;
+                            border-radius: 5px;
+                            cursor: pointer;
+                            font-size: 16px;
+                        }
+                        #backToTop:hover {
+                            background-color: #0056b3;
+                        }
+                    </style>
+                </head>
+                <body>
+                
+                    <header>
+                        <h1>Alertas de Emergencia</h1>
+                    </header>
+                
+                  
+                
+                    <div class="container">
+                        <div class="alert">
+                            <img src="https://media.giphy.com/media/3o7aD6v9KxrOhsTQH6/giphy.gif" alt="Alerta de emergencia">
+                            <div>
+                                <h2>Alerta Roja: Inundaciones en la Región Norte</h2>
+                                <p>Se ha emitido una alerta roja para la región norte debido a las fuertes lluvias que han causado inundaciones severas. Las autoridades instan a la población a evacuar las áreas de riesgo y seguir las indicaciones de los equipos de emergencia.</p>
                             </div>
                         </div>
-                    </div>
-                    
-                    <!-- Tarjeta 2 -->
-                    <div class="col-md-4">
-                        <div class="card mb-4">
-                            <div class="card-body">
-                                <h5 class="card-title">Ventas del Mes</h5>
-                                <p class="card-text">Ventas totales realizadas en el mes actual.</p>
-                                <h3 class="card-text">$5,678</h3>
-                            </div>
+                
+                        <div class="recent-alerts">
+                            <h3>Alertas Recientes</h3>
+                            <ul>
+                                <li>Terremoto de magnitud 5.8 en la costa pacífica. <a href="#">Ver más &raquo;</a></li>
+                                <li>Deslizamientos de tierra en la zona montañosa. <a href="#">Ver más &raquo;</a></li>
+                                <li>Erupción volcánica en el Volcán Masaya. <a href="#">Ver más &raquo;</a></li>
+                            </ul>
                         </div>
                     </div>
-                    
-                    <!-- Tarjeta 3 -->
-                    <div class="col-md-4">
-                        <div class="card mb-4">
-                            <div class="card-body">
-                                <h5 class="card-title">Tickets Pendientes</h5>
-                                <p class="card-text">Número de tickets de soporte pendientes.</p>
-                                <h3 class="card-text">12</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Gráfico o estadísticas -->
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Estadísticas del Año</h5>
-                                <!-- Aquí puedes insertar un gráfico con una librería como Chart.js -->
-                                <div class="placeholder" style="height: 300px; background-color: #e9ecef;">Gráfico Aquí</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
+                    <footer>
+                        <p>&copy; 2024  D-Alert. Todos los derechos reservados.</p>
+                    </footer>
+                
+                    <button id="backToTop" onclick="scrollToTop()">Volver al principio</button>
+                
+                    <script>
+                        function scrollToTop() {
+                            window.scrollTo({ top: 0, behavior: 'smooth' });
+                        }
+                    </script>
+                
+                </body>
+                </html>
+                
             </main>
         </div>
     </div>

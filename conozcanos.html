@@ -127,10 +127,17 @@
                         </div>
                     </div>
                 </div>
-
+                <button id="backToTop" onclick="scrollToTop()">Volver al principio</button>
+            
+              
                 <footer>
                     <p>&copy; 2024  D-Alert. Todos los derechos reservados.</p>
                 </footer>
+                <script>
+                    function scrollToTop() {
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }
+                </script>
             
             </main>
         </div>
