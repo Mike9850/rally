@@ -21,6 +21,16 @@ body {
     border-radius: 8px;
 }
 
+.iframe-container {
+    width: 80%; /* Ancho del contenedor en porcentaje */
+    max-width: 1000px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+iframe {
+    width: 100%; /* Ancho del iframe en relación al contenedor */
+    height: 500px; /* Alto fijo del iframe */
+}
 .text-overlay {
     position: absolute;
     top: 50%;
