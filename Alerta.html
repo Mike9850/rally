@@ -25,7 +25,18 @@
         .fondo{
             background-color:#1abc9c;
         }
-       
+        #backToTop {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
      
     </style>
 </head>
@@ -55,10 +66,22 @@
                         <li class="nav-item">
                             <a class="nav-link" href="conozcanos.html">Conozcanos</a>
                         </li>
+                        <body class="nav-item">
+                            <!-- Botón de pie de página -->
+                        <button id="backToTop" onclick="scrollToTop()">Volver al principio</button>
+                   
+                        <script>
+                            // Función para desplazar hacia arriba
+                            function scrollToTop() {
+                                window.scrollTo({ top: 0, behavior: 'smooth' });
+                            }
+                        </script>
+                       </body>         
+
                     </ul>
                 </div>
             </nav>
-
+            
             <!-- Contenido principal -->
             <main class="col-md-9 ms-sm-auto col-lg-10 px-4 fondo">
                 <h1 class="my-4 sidebara" >Menu de alertas</h1>

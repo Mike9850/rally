@@ -5,6 +5,13 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra sutil */
     
 }
+.imagenstilo{
+
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    height:0pt; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Agrega bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra sutil */
+}
 
 /* Estilo para el contenedor de la imagen */
 .imagen-container {
