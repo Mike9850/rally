@@ -63,53 +63,158 @@
             <main class="col-md-9 ms-sm-auto col-lg-10 px-4 fondo">
                 <h1 class="my-4 sidebara" >Conoce nuestros servicios</h1>
 
-                <div class="row">
-                    <!-- Tarjeta 1 -->
-                    <div class="col-md-4">
-                        <div class="card mb-4">
-                            <div class="card-body">
-                                <h5 class="card-title">Usuarios Activos</h5>
-                                <p class="card-text">Número de usuarios activos en el sistema.</p>
-                                <h3 class="card-text">1,234</h3>
-                            </div>
-                        </div>
+                <style>
+                    body {
+                        font-family: Arial, sans-serif;
+                        line-height: 1.6;
+                        margin: 0;
+                        padding: 0;
+                        background-color: #f4f4f4;
+                    }
+                    header {
+                        background-color: #007BFF;
+                        color: white;
+                        padding: 10px 0;
+                        text-align: center;
+                    }
+                    header h1 {
+                        margin: 0;
+                        font-size: 2.5rem;
+                    }
+                    nav {
+                        background-color: #0056b3;
+                        padding: 10px;
+                        text-align: center;
+                    }
+                    nav a {
+                        color: white;
+                        margin: 0 15px;
+                        text-decoration: none;
+                    }
+                    .container {
+                        padding: 20px;
+                    }
+                    .service {
+                        background-color: white;
+                        padding: 15px;
+                        margin-bottom: 20px;
+                        border-radius: 5px;
+                        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                    }
+                    .service h2 {
+                        margin-top: 0;
+                    }
+                    .testimonial {
+                        background-color: #e2e2e2;
+                        padding: 15px;
+                        margin-bottom: 20px;
+                        border-radius: 5px;
+                    }
+                    .testimonial p {
+                        font-style: italic;
+                    }
+                    .contact {
+                        background-color: #0056b3;
+                        color: white;
+                        padding: 20px;
+                        border-radius: 5px;
+                        text-align: center;
+                    }
+                    .contact h2 {
+                        margin-top: 0;
+                    }
+                    .contact p {
+                        margin-bottom: 15px;
+                    }
+                    .contact a {
+                        color: white;
+                        text-decoration: underline;
+                    }
+                    footer {
+                        background-color: #333;
+                        color: white;
+                        text-align: center;
+                        padding: 10px 0;
+                        position: relative;
+                        bottom: 0;
+                        width: 100%;
+                    }
+                    footer p {
+                        margin: 0;
+                    }
+                    #backToTop {
+                        position: fixed;
+                        bottom: 20px;
+                        right: 20px;
+                        padding: 10px 20px;
+                        background-color: #007BFF;
+                        color: white;
+                        border: none;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        font-size: 16px;
+                    }
+                    #backToTop:hover {
+                        background-color: #0056b3;
+                    }
+                </style>
+            </head>
+            <body>
+            
+                <header>
+                    <h1>Capacitación en Prevención</h1>
+                </header>
+            
+                
+                <div class="container">
+                    <section class="service">
+                        <h2>Capacitación en Seguridad Industrial</h2>
+                        <p>Ofrecemos cursos especializados en seguridad industrial para proteger a tus empleados y minimizar los riesgos en el lugar de trabajo. Nuestros entrenadores certificados proporcionan herramientas prácticas y conocimientos esenciales.</p>
+                        <a href="#">Leer más &raquo;</a>
+                    </section>
+            
+                    <section class="service">
+                        <h2>Formación en Prevención de Desastres</h2>
+                        <p>Aprende a prepararte para desastres naturales y emergencias con nuestros programas de formación. Nuestros expertos te guiarán en la creación de planes de emergencia efectivos y la implementación de medidas preventivas.</p>
+                        <a href="#">Leer más &raquo;</a>
+                    </section>
+            
+                    <section class="service">
+                        <h2>Capacitación en Primeros Auxilios</h2>
+                        <p>Capacita a tu equipo en primeros auxilios para responder eficientemente ante emergencias médicas. Ofrecemos formación práctica con certificación reconocida a nivel nacional e internacional.</p>
+                        <a href="#">Leer más &raquo;</a>
+                    </section>
+            
+                    <h2>Testimonios de Nuestros Clientes</h2>
+                    <div class="testimonial">
+                        <p>"La capacitación en seguridad industrial que recibimos fue excelente. Ahora nuestro personal está mucho más consciente de los riesgos y sabe cómo prevenir accidentes." - Empresa ABC</p>
                     </div>
-                    
-                    <!-- Tarjeta 2 -->
-                    <div class="col-md-4">
-                        <div class="card mb-4">
-                            <div class="card-body">
-                                <h5 class="card-title">Ventas del Mes</h5>
-                                <p class="card-text">Ventas totales realizadas en el mes actual.</p>
-                                <h3 class="card-text">$5,678</h3>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Tarjeta 3 -->
-                    <div class="col-md-4">
-                        <div class="card mb-4">
-                            <div class="card-body">
-                                <h5 class="card-title">Tickets Pendientes</h5>
-                                <p class="card-text">Número de tickets de soporte pendientes.</p>
-                                <h3 class="card-text">12</h3>
-                            </div>
-                        </div>
+            
+                    <div class="testimonial">
+                        <p>"Gracias a la formación en prevención de desastres, pudimos desarrollar un plan de emergencia que ha sido clave para mantener a salvo a nuestro equipo durante eventos adversos." - Organización XYZ</p>
                     </div>
                 </div>
-
-                <!-- Gráfico o estadísticas -->
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Estadísticas del Año</h5>
-                                <!-- Aquí puedes insertar un gráfico con una librería como Chart.js -->
-                                <div class="placeholder" style="height: 300px; background-color: #e9ecef;">Gráfico Aquí</div>
-                            </div>
-                        </div>
-                    </div>
+            
+                <div class="contact">
+                    <h2>Contáctanos</h2>
+                    <p>¿Interesado en nuestros servicios? ¡Ponte en contacto con nosotros hoy mismo!</p>
+                    <p>Email: <a href="atencioncuidadana@dialer.gob.ni">atencioncuidadana@dialer.gob.ni</a></p>
+                    <p>Teléfono: <a href="tel:+50512345678">+505 1234 5678</a></p>
                 </div>
+            
+                <footer>
+                    <p>&copy; 2024  D-Alert. Todos los derechos reservados.</p>
+                </footer>
+            
+                <button id="backToTop" onclick="scrollToTop()">Volver al principio</button>
+            
+                <script>
+                    function scrollToTop() {
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }
+                </script>
+            
+            </body>
             </main>
         </div>
     </div>
